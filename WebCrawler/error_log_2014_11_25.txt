@@ -1,0 +1,4 @@
+Server returned HTTP response code: 403 for URL: http://validator.w3.org/check?uri=referer
+Server returned HTTP response code: 403 for URL: http://www.muzeum.agh.edu.pl/
+abcd
+abcd

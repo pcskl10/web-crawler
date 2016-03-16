@@ -1,0 +1,21 @@
+package WebCrawler;
+
+import java.io.IOException;
+
+/*
+ * Interfejs do pobierania stron WWW z internetu.
+ */
+public interface WWWPageDownloader 
+{
+    /**
+     * Pobiera wskazana strone z internetu i zwraca jej zawartosc jako napis.
+     * @param pageURL adres URL strony do pobrania
+     * @return napis zawierajacy zawrtosc strony (w html'u)
+     * @throws DownloaderException zglaszany w sytuacji 
+     *         gdy strona nie moze byc pobrana (np. nie ma srony o takim
+     *         adresie, wystapil blad I/O podczas pobierania itp.)
+     * @throws IOException 
+     *
+     */
+     String downloadPage(String pageURL) throws InvalidPageURLException, PageIOException;
+}
